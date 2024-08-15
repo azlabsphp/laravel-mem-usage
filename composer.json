@@ -21,5 +21,12 @@
     },
     "require": {
         "illuminate/support": "^9.0|^10.0|^11.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Drewlabs\\Laravel\\Memory\\Usage\\ServiceProvider"
+            ]
+        }
     }
 }
