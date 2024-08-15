@@ -19,10 +19,7 @@
         "optimize-autoloader": true,
         "sort-packages": true
     },
-    "require-dev": {
-        "illuminate/http": "^9.0|^10.0|^11.0"
-    },
     "require": {
-        "illuminate/support": "^11.20"
+        "illuminate/support": "^9.0|^10.0|^11.0"
     }
 }
