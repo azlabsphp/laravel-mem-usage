@@ -33,10 +33,7 @@ final class Log
         $this->initial = $initial;
         $this->current = $current;
         $this->loggedAt = $loggedAt ?? time();
-        $this->diff = new AllocatedMemory(
-            $this->current->getUsedMemory() - $this->initial->getUsedMemory(),
-            $this->current->getRequestedMemory() - $this->initial->getUsedMemory()
-        );
+        $this->diff = new AllocatedMemory($this->current->getUsedMemory() - $this->initial->getUsedMemory(), $this->current->getRequestedMemory());
     }
 
     public function getName(): string
