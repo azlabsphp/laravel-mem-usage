@@ -1,0 +1,28 @@
+{
+    "name": "drewlabs/laravel-mem-usage",
+    "description": "Tracks per request memory usage in a Laravel application",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Drewlabs\\Laravel\\Memory\\Usage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "azandrew-sidoine",
+            "email": "azandrewdevelopper@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "require-dev": {
+        "illuminate/http": "^11.20"
+    },
+    "require": {
+        "illuminate/support": "^11.20"
+    }
+}
