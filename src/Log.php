@@ -27,7 +27,7 @@ final class Log
      * @param AllocatedMemory $current 
      * @param int $loggedAt 
      */
-    public function __construct(string $name, AllocatedMemory $initial, AllocatedMemory $current, int $loggedAt = null)
+    public function __construct(string $name, AllocatedMemory $initial, AllocatedMemory $current, ?int $loggedAt = null)
     {
         $this->name = $name;
         $this->initial = $initial;

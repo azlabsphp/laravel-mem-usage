@@ -20,7 +20,8 @@
         "sort-packages": true
     },
     "require": {
-        "illuminate/support": "^9.0|^10.0|^11.0"
+        "illuminate/support": "*",
+        "illuminate/http": "*"
     },
     "extra": {
         "laravel": {

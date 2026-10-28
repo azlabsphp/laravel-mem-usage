@@ -27,7 +27,6 @@ final class Middleware
      */
     public function handle($request, callable $next)
     {
-        # Call the dispatcher on the log instance
         $logger = Logger::create(sprintf('%s /%s', $request->method(), ltrim($request->path())), $this->dispatch);
         
         /** @var \Symfony\Component\HttpFoundation\Response */
@@ -35,7 +34,6 @@ final class Middleware
             return $next($request);
         });
 
-        # return the request response to the user
         return $response;
     }
 }
